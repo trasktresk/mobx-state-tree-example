@@ -1,7 +1,7 @@
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { StaticRouter, matchPath } from "react-router-dom";
+import { StaticRouter } from "react-router-dom";
 import { Provider } from "mobx-react"
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
@@ -36,10 +36,8 @@ app.get('*', (req, res) => {
             ${styleTags}
         </head>
         <body>
-        
-        <div id="root">${markup}</div>
-        
-        <script src="/common.bundle.js"></script>
+            <div id="root">${markup}</div>
+            <script src="/common.bundle.js"></script>
         </body>
         </html>
     `);

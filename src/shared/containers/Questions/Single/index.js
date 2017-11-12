@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { observer, inject } from 'mobx-react';
-import { withRouter } from 'react-router-dom';
 
 import Container from 'Components/Container';
 import Button from 'Components/Button';

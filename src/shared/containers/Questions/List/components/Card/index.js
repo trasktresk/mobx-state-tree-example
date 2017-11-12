@@ -32,10 +32,10 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-export default ({ question, id }) => {
+export default ({ text, id }) => {
     return (
         <Card>
-            <Question>{question}</Question>
+            <Question>{text}</Question>
             <ButtonBox>
                 <StyledLink to={`/questions/${id}`}>Ответить</StyledLink>
             </ButtonBox>
